@@ -17,17 +17,26 @@ public class MyLinkList {
 	}
 	
 	public void insertNode(Node per,Node cur){
-		if(head==null){
-			head.setNext(next);
-		}
+		
 	}
 	
 	public void deleteNode(){}
 	
-	public void getNode(){}
+	public Node getHeadNode(){
+		return this.head;
+	}
 	
 	public void getLength(){}
 	
 	public void clear(){}
+	
+	public static void main(String[] args) {
+		Node n1 = new Node(1);
+		Node n2 = new Node(2);
+		MyLinkList ml = new MyLinkList();
+		ml.appendNode(n1);
+		ml.appendNode(n2);
+		System.out.println(ml.getHeadNode().getData());
+	}
 	
 }
